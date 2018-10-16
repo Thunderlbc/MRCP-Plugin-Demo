@@ -2,7 +2,7 @@
 
 # libtool - Provide generalized library-building support services.
 # Generated automatically by config.status (unimrcp) 1.5.0
-# Libtool was configured on host bogon:
+# Libtool was configured on host s85:
 # NOTE: Changes made to this file will be lost: look at ltmain.sh.
 #
 #   Copyright (C) 1996, 1997, 1998, 1999, 2000, 2001, 2003, 2004, 2005,
@@ -75,25 +75,25 @@ build=x86_64-unknown-linux-gnu
 build_os=linux-gnu
 
 # A sed program that does not truncate output.
-SED="/bin/sed"
+SED="/usr/bin/sed"
 
 # Sed that helps us avoid accidentally triggering echo(1) options like -n.
 Xsed="$SED -e 1s/^X//"
 
 # A grep program that handles long lines.
-GREP="/bin/grep"
+GREP="/usr/bin/grep"
 
 # An ERE matcher.
-EGREP="/bin/grep -E"
+EGREP="/usr/bin/grep -E"
 
 # A literal string matcher.
-FGREP="/bin/grep -F"
+FGREP="/usr/bin/grep -F"
 
 # A BSD- or MS-compatible name lister.
-NM="/bin/nm -B"
+NM="/usr/bin/nm -B"
 
 # Whether we need soft or hard links.
-LN_S="cp -pR"
+LN_S="ln -s"
 
 # What is the maximum length of a command?
 max_cmd_len=1572864
@@ -272,10 +272,10 @@ finish_eval=""
 hardcode_into_libs=yes
 
 # Compile-time system search path for libraries.
-sys_lib_search_path_spec="/usr/lib/gcc/x86_64-redhat-linux/4.8.5 /usr/lib64 /lib64 "
+sys_lib_search_path_spec="/data2/libingchen/anaconda2/lib/gcc/x86_64-unknown-linux-gnu/4.8.5 /data2/libingchen/anaconda2/lib/gcc /data2/libingchen/anaconda2/lib /lib /usr/lib "
 
 # Run-time system search path for libraries.
-sys_lib_dlsearch_path_spec="/lib64 /usr/lib64 /lib /usr/lib /usr/lib64/dyninst /usr/lib64/mysql "
+sys_lib_dlsearch_path_spec="/lib64 /usr/lib64 /lib /usr/lib /usr/lib64/atlas /usr/lib64/dyninst /usr/lib64/mysql /usr/lib64/qt-3.3/lib /usr/lib64/tcl8.5 /usr/lib64/xulrunner "
 
 # Whether dlopen is supported.
 dlopen_support=unknown
@@ -292,7 +292,7 @@ striplib="strip --strip-unneeded"
 
 
 # The linker used to build libraries.
-LD="/bin/ld -m elf_x86_64"
+LD="/usr/bin/ld -m elf_x86_64"
 
 # How to create reloadable object files.
 reload_flag=" -r"
@@ -308,7 +308,7 @@ CC="gcc"
 with_gcc=yes
 
 # Compiler flag to turn off builtin functions.
-no_builtin_flag=" -fno-builtin"
+no_builtin_flag=" -fno-builtin -fno-rtti -fno-exceptions"
 
 # Additional compiler flags for building library objects.
 pic_flag=" -fPIC -DPIC"
@@ -10093,7 +10093,7 @@ build_old_libs=`case $build_libtool_libs in yes) echo no;; *) echo yes;; esac`
 # ### BEGIN LIBTOOL TAG CONFIG: CXX
 
 # The linker used to build libraries.
-LD="/bin/ld -m elf_x86_64"
+LD="/usr/bin/ld -m elf_x86_64"
 
 # How to create reloadable object files.
 reload_flag=" -r"
@@ -10224,17 +10224,17 @@ file_list_spec=""
 hardcode_action=immediate
 
 # The directories searched by this compiler when creating a shared library.
-compiler_lib_search_dirs="/usr/lib/gcc/x86_64-redhat-linux/4.8.5 /usr/lib/gcc/x86_64-redhat-linux/4.8.5/../../../../lib64 /lib/../lib64 /usr/lib/../lib64 /usr/lib/gcc/x86_64-redhat-linux/4.8.5/../../.."
+compiler_lib_search_dirs="/data2/libingchen/anaconda2/bin/../lib/gcc/x86_64-unknown-linux-gnu/4.8.5 /data2/libingchen/anaconda2/bin/../lib/gcc /data2/libingchen/anaconda2/bin/../lib/gcc/x86_64-unknown-linux-gnu/4.8.5/../../../../lib /lib/../lib /usr/lib/../lib /data2/libingchen/anaconda2/bin/../lib/gcc/x86_64-unknown-linux-gnu/4.8.5/../../.."
 
 # Dependencies to place before and after the objects being linked to
 # create a shared library.
-predep_objects="/usr/lib/gcc/x86_64-redhat-linux/4.8.5/../../../../lib64/crti.o /usr/lib/gcc/x86_64-redhat-linux/4.8.5/crtbeginS.o"
-postdep_objects="/usr/lib/gcc/x86_64-redhat-linux/4.8.5/crtendS.o /usr/lib/gcc/x86_64-redhat-linux/4.8.5/../../../../lib64/crtn.o"
+predep_objects="/data2/libingchen/anaconda2/bin/../lib/gcc/x86_64-unknown-linux-gnu/4.8.5/crti.o /data2/libingchen/anaconda2/bin/../lib/gcc/x86_64-unknown-linux-gnu/4.8.5/crtbeginS.o"
+postdep_objects="/data2/libingchen/anaconda2/bin/../lib/gcc/x86_64-unknown-linux-gnu/4.8.5/crtendS.o /data2/libingchen/anaconda2/bin/../lib/gcc/x86_64-unknown-linux-gnu/4.8.5/crtn.o"
 predeps=""
 postdeps="-lstdc++ -lm -lgcc_s -lc -lgcc_s"
 
 # The library search path used internally by the compiler when linking
 # a shared library.
-compiler_lib_search_path="-L/usr/lib/gcc/x86_64-redhat-linux/4.8.5 -L/usr/lib/gcc/x86_64-redhat-linux/4.8.5/../../../../lib64 -L/lib/../lib64 -L/usr/lib/../lib64 -L/usr/lib/gcc/x86_64-redhat-linux/4.8.5/../../.."
+compiler_lib_search_path="-L/data2/libingchen/anaconda2/bin/../lib/gcc/x86_64-unknown-linux-gnu/4.8.5 -L/data2/libingchen/anaconda2/bin/../lib/gcc -L/data2/libingchen/anaconda2/bin/../lib/gcc/x86_64-unknown-linux-gnu/4.8.5/../../../../lib -L/lib/../lib -L/usr/lib/../lib -L/data2/libingchen/anaconda2/bin/../lib/gcc/x86_64-unknown-linux-gnu/4.8.5/../../.."
 
 # ### END LIBTOOL TAG CONFIG: CXX

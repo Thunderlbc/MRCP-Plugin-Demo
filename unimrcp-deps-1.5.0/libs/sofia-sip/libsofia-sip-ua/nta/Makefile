@@ -128,11 +128,11 @@ libnta_la_OBJECTS = $(am_libnta_la_OBJECTS)
 am__check_nta_SOURCES_DIST = $(top_srcdir)/s2check/exit77.c \
 	check_nta.h check_nta_api.c check_nta_client.c \
 	check_nta_server.c check_nta.c
-am_check_nta_OBJECTS = exit77.$(OBJEXT)
-#am_check_nta_OBJECTS = check_nta_api.$(OBJEXT) \
-#	check_nta_client.$(OBJEXT) \
-#	check_nta_server.$(OBJEXT) \
-#	check_nta.$(OBJEXT)
+#am_check_nta_OBJECTS = exit77.$(OBJEXT)
+am_check_nta_OBJECTS = check_nta_api.$(OBJEXT) \
+	check_nta_client.$(OBJEXT) \
+	check_nta_server.$(OBJEXT) \
+	check_nta.$(OBJEXT)
 check_nta_OBJECTS = $(am_check_nta_OBJECTS)
 am__DEPENDENCIES_1 =
 am__DEPENDENCIES_2 = libnta.la ../ipt/libipt.la ../sip/libsip.la \
@@ -141,7 +141,7 @@ am__DEPENDENCIES_2 = libnta.la ../ipt/libipt.la ../sip/libsip.la \
 	../url/liburl.la ../msg/libmsg.la ../bnf/libbnf.la \
 	../su/libsu.la ${top_builddir}/s2check/libs2.a \
 	$(am__DEPENDENCIES_1)
-#check_nta_DEPENDENCIES = $(am__DEPENDENCIES_2)
+check_nta_DEPENDENCIES = $(am__DEPENDENCIES_2)
 portbind_SOURCES = portbind.c
 portbind_OBJECTS = portbind.$(OBJEXT)
 portbind_LDADD = $(LDADD)
@@ -211,20 +211,20 @@ CTAGS = ctags
 am__tty_colors = \
 red=; grn=; lgn=; blu=; std=
 DISTFILES = $(DIST_COMMON) $(DIST_SOURCES) $(TEXINFOS) $(EXTRA_DIST)
-ACLOCAL = ${SHELL} /home/cotin/share/unimrcp-deps-1.5.0/libs/sofia-sip/missing --run aclocal-1.11
+ACLOCAL = ${SHELL} /data2/libingchen/Code/MRCP-Plugin-Demo/unimrcp-deps-1.5.0/libs/sofia-sip/missing --run aclocal-1.11
 ACLOCAL_AMFLAGS = -I m4
 ALLOCA = 
-AMTAR = ${SHELL} /home/cotin/share/unimrcp-deps-1.5.0/libs/sofia-sip/missing --run tar
+AMTAR = ${SHELL} /data2/libingchen/Code/MRCP-Plugin-Demo/unimrcp-deps-1.5.0/libs/sofia-sip/missing --run tar
 AR = ar
-AUTOCONF = ${SHELL} /home/cotin/share/unimrcp-deps-1.5.0/libs/sofia-sip/missing --run autoconf
-AUTOHEADER = ${SHELL} /home/cotin/share/unimrcp-deps-1.5.0/libs/sofia-sip/missing --run autoheader
-AUTOMAKE = ${SHELL} /home/cotin/share/unimrcp-deps-1.5.0/libs/sofia-sip/missing --run automake-1.11
+AUTOCONF = ${SHELL} /data2/libingchen/Code/MRCP-Plugin-Demo/unimrcp-deps-1.5.0/libs/sofia-sip/missing --run autoconf
+AUTOHEADER = ${SHELL} /data2/libingchen/Code/MRCP-Plugin-Demo/unimrcp-deps-1.5.0/libs/sofia-sip/missing --run autoheader
+AUTOMAKE = ${SHELL} /data2/libingchen/Code/MRCP-Plugin-Demo/unimrcp-deps-1.5.0/libs/sofia-sip/missing --run automake-1.11
 AWK = gawk
 CC = gcc
 CCDEPMODE = depmode=gcc3
 CFLAGS = -g -O2
-CHECK_CFLAGS = 
-CHECK_LIBS = 
+CHECK_CFLAGS = -pthread  
+CHECK_LIBS = -lcheck  
 COVERAGE_FLAGS = 
 CPP = gcc -E
 CPPFLAGS = 
@@ -239,7 +239,7 @@ ECHO_C =
 ECHO_N = -n
 ECHO_T = 
 EGREP = /bin/grep -E
-ETAGS = echo
+ETAGS = etags
 EXEEXT = 
 FGREP = /bin/grep -F
 GCOV = 
@@ -269,10 +269,10 @@ LIBVER_SOFIA_SIP_UA_GLIB_SOVER = 3
 LIBVER_SOFIA_SIP_UA_REV = 0
 LIBVER_SOFIA_SIP_UA_SOVER = 0
 LIPO = 
-LN_S = cp -p
+LN_S = ln -s
 LTLIBOBJS = 
 MAINT = #
-MAKEINFO = ${SHELL} /home/cotin/share/unimrcp-deps-1.5.0/libs/sofia-sip/missing --run makeinfo
+MAKEINFO = ${SHELL} /data2/libingchen/Code/MRCP-Plugin-Demo/unimrcp-deps-1.5.0/libs/sofia-sip/missing --run makeinfo
 MINGW_ENVIRONMENT = 
 MKDIR_P = /bin/mkdir -p
 MOSTLYCLEANFILES = *.bb *.bbg *.da *.gcov *.gcda *.gcno .test[0-9]*
@@ -303,10 +303,10 @@ STRIP = strip
 TESTS_ENVIRONMENT = $(SHELL)
 VERSION = 1.12.11-234-gd74df2e
 VER_LIBSOFIA_SIP_UA_MAJOR_MINOR = 1.12
-abs_builddir = /home/cotin/share/unimrcp-deps-1.5.0/libs/sofia-sip/libsofia-sip-ua/nta
-abs_srcdir = /home/cotin/share/unimrcp-deps-1.5.0/libs/sofia-sip/libsofia-sip-ua/nta
-abs_top_builddir = /home/cotin/share/unimrcp-deps-1.5.0/libs/sofia-sip
-abs_top_srcdir = /home/cotin/share/unimrcp-deps-1.5.0/libs/sofia-sip
+abs_builddir = /data2/libingchen/Code/MRCP-Plugin-Demo/unimrcp-deps-1.5.0/libs/sofia-sip/libsofia-sip-ua/nta
+abs_srcdir = /data2/libingchen/Code/MRCP-Plugin-Demo/unimrcp-deps-1.5.0/libs/sofia-sip/libsofia-sip-ua/nta
+abs_top_builddir = /data2/libingchen/Code/MRCP-Plugin-Demo/unimrcp-deps-1.5.0/libs/sofia-sip
+abs_top_srcdir = /data2/libingchen/Code/MRCP-Plugin-Demo/unimrcp-deps-1.5.0/libs/sofia-sip
 ac_ct_CC = gcc
 ac_ct_DUMPBIN = 
 am__include = include
@@ -335,7 +335,7 @@ htmldir = ${docdir}
 include_sofiadir = ${includedir}/sofia-sip-1.12
 includedir = ${prefix}/include
 infodir = ${datarootdir}/info
-install_sh = ${SHELL} /home/cotin/share/unimrcp-deps-1.5.0/libs/sofia-sip/install-sh
+install_sh = ${SHELL} /data2/libingchen/Code/MRCP-Plugin-Demo/unimrcp-deps-1.5.0/libs/sofia-sip/install-sh
 libdir = ${exec_prefix}/lib
 libexecdir = ${exec_prefix}/libexec
 localedir = ${datarootdir}/locale
@@ -401,14 +401,14 @@ LDADD = libnta.la ../ipt/libipt.la ../sip/libsip.la \
 	../url/liburl.la ../msg/libmsg.la ../bnf/libbnf.la \
 	../su/libsu.la ${top_builddir}/s2check/libs2.a $(openssl_LIBS)
 test_nta_LDFLAGS = -static
-check_nta_SOURCES = $(top_srcdir)/s2check/exit77.c
-#check_nta_SOURCES = check_nta.h \
-#			check_nta_api.c \
-#			check_nta_client.c \
-#			check_nta_server.c \
-#			check_nta.c
+#check_nta_SOURCES = $(top_srcdir)/s2check/exit77.c
+check_nta_SOURCES = check_nta.h \
+			check_nta_api.c \
+			check_nta_client.c \
+			check_nta_server.c \
+			check_nta.c
 
-#check_nta_LDADD = ${LDADD} 
+check_nta_LDADD = ${LDADD} -lcheck  
 
 # ----------------------------------------------------------------------
 # Install and distribution rules

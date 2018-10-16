@@ -105,11 +105,15 @@ static apr_size_t mpf_activity_detector_level_calculate(const mpf_frame_t *frame
 	for(; cur < end; cur++) {
 		if(*cur < 0) {
 			sum -= *cur;
+      apt_log(MPF_LOG_MARK,APT_PRIO_INFO,"MINUS[%d]", *cur);
+
 		}
 		else {
+      apt_log(MPF_LOG_MARK,APT_PRIO_INFO,"PLUS[%d]", *cur);
 			sum += *cur;
 		}
 	}
+  apt_log(MPF_LOG_MARK,APT_PRIO_INFO,"LEVEL_CALCULATE SUM: [%d] COUNT:[%d]", sum, count);
 
 	return sum / count;
 }
@@ -123,28 +127,37 @@ MPF_DECLARE(mpf_detector_event_e) mpf_activity_detector_process(mpf_activity_det
 	if((frame->type & MEDIA_FRAME_TYPE_AUDIO) == MEDIA_FRAME_TYPE_AUDIO) {
 		/* first, calculate current activity level of processed frame */
 		level = mpf_activity_detector_level_calculate(frame);
-#if 0
+#if 1
 		apt_log(MPF_LOG_MARK,APT_PRIO_INFO,"Activity Detector [%"APR_SIZE_T_FMT"],[%"APR_SIZE_T_FMT"]",level,detector->level_threshold);
 	} else {
 		apt_log(MPF_LOG_MARK,APT_PRIO_INFO,"Activity Detector [%"APR_SIZE_T_FMT"][%"APR_SIZE_T_FMT"],frame type [%d]",level,detector->level_threshold,frame->type);
 #endif
 	}
 
+
+  apt_log(MPF_LOG_MARK,APT_PRIO_INFO,"LEVEL: [%d]", level);
+
 	if(detector->state == DETECTOR_STATE_INACTIVITY) {
+    apt_log(MPF_LOG_MARK,APT_PRIO_INFO,"Into INACTIVE");
 		if(level >= detector->level_threshold) {
 			/* start to detect activity */
+      apt_log(MPF_LOG_MARK,APT_PRIO_INFO,"Into INACTIVE: Trans");
 			mpf_activity_detector_state_change(detector,DETECTOR_STATE_ACTIVITY_TRANSITION);
 		}
 		else {
+      apt_log(MPF_LOG_MARK,APT_PRIO_INFO,"Into INACTIVE: Else");
 			detector->duration += CODEC_FRAME_TIME_BASE;
 			if(detector->duration >= detector->noinput_timeout) {
 				/* detected noinput */
+        apt_log(MPF_LOG_MARK,APT_PRIO_INFO,"Into INACTIVE: Else, NOINPUT");
 				det_event = MPF_DETECTOR_EVENT_NOINPUT;
 			}
 		}
 	}
 	else if(detector->state == DETECTOR_STATE_ACTIVITY_TRANSITION) {
+    apt_log(MPF_LOG_MARK,APT_PRIO_INFO,"Into ACTIVE_TRANS");
 		if(level >= detector->level_threshold) {
+      apt_log(MPF_LOG_MARK,APT_PRIO_INFO,"Into ACTIVE_TRANS: >");
 			detector->duration += CODEC_FRAME_TIME_BASE;
 			if(detector->duration >= detector->speech_timeout) {
 				/* finally detected activity */
@@ -154,24 +167,31 @@ MPF_DECLARE(mpf_detector_event_e) mpf_activity_detector_process(mpf_activity_det
 		}
 		else {
 			/* fallback to inactivity */
+      apt_log(MPF_LOG_MARK,APT_PRIO_INFO,"Into ACTIVE_TRANS: <");
 			mpf_activity_detector_state_change(detector,DETECTOR_STATE_INACTIVITY);
 		}
 	}
 	else if(detector->state == DETECTOR_STATE_ACTIVITY) {
+    apt_log(MPF_LOG_MARK,APT_PRIO_INFO,"Into ACTIVE");
 		if(level >= detector->level_threshold) {
+      apt_log(MPF_LOG_MARK,APT_PRIO_INFO,"Into ACTIVE: >");
 			detector->duration += CODEC_FRAME_TIME_BASE;
 		}
 		else {
 			/* start to detect inactivity */
+      apt_log(MPF_LOG_MARK,APT_PRIO_INFO,"Into ACTIVE: <");
 			mpf_activity_detector_state_change(detector,DETECTOR_STATE_INACTIVITY_TRANSITION);
 		}
 	}
 	else if(detector->state == DETECTOR_STATE_INACTIVITY_TRANSITION) {
+    apt_log(MPF_LOG_MARK,APT_PRIO_INFO,"Into INACTIVE_TRANS");
 		if(level >= detector->level_threshold) {
 			/* fallback to activity */
+      apt_log(MPF_LOG_MARK,APT_PRIO_INFO,"Into INACTIVE_TRANS: >");
 			mpf_activity_detector_state_change(detector,DETECTOR_STATE_ACTIVITY);
 		}
 		else {
+      apt_log(MPF_LOG_MARK,APT_PRIO_INFO,"Into INACTIVE_TRANS: <");
 			detector->duration += CODEC_FRAME_TIME_BASE;
 			if(detector->duration >= detector->silence_timeout) {
 				/* detected inactivity */

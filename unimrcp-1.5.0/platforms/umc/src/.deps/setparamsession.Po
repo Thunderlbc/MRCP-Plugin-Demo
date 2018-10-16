@@ -6,7 +6,7 @@ src/setparamsession.o: src/setparamsession.cpp /usr/include/stdc-predef.h \
  /usr/include/bits/wordsize.h /usr/include/gnu/stubs.h \
  /usr/include/gnu/stubs-64.h /usr/include/bits/types.h \
  /usr/include/bits/typesizes.h /usr/include/time.h \
- /usr/lib/gcc/x86_64-redhat-linux/4.8.5/include/stddef.h \
+ /data2/libingchen/anaconda2/lib/gcc/x86_64-unknown-linux-gnu/4.8.5/include/stddef.h \
  /usr/include/endian.h /usr/include/bits/endian.h \
  /usr/include/bits/byteswap.h /usr/include/bits/byteswap-16.h \
  /usr/include/sys/select.h /usr/include/bits/select.h \
@@ -17,15 +17,15 @@ src/setparamsession.o: src/setparamsession.cpp /usr/include/stdc-predef.h \
  /usr/include/bits/sockaddr.h /usr/include/asm/socket.h \
  /usr/include/asm-generic/socket.h /usr/include/asm/sockios.h \
  /usr/include/asm-generic/sockios.h \
- /usr/lib/gcc/x86_64-redhat-linux/4.8.5/include/stdint.h \
+ /data2/libingchen/anaconda2/lib/gcc/x86_64-unknown-linux-gnu/4.8.5/include/stdint.h \
  /usr/include/stdint.h /usr/include/bits/wchar.h /usr/include/sys/wait.h \
  /usr/include/signal.h /usr/include/bits/signum.h \
  /usr/include/bits/siginfo.h /usr/include/bits/sigaction.h \
  /usr/include/bits/sigcontext.h /usr/include/bits/sigstack.h \
  /usr/include/sys/ucontext.h /usr/include/bits/sigthread.h \
  /usr/include/bits/waitflags.h /usr/include/bits/waitstatus.h \
- /usr/lib/gcc/x86_64-redhat-linux/4.8.5/include/limits.h \
- /usr/lib/gcc/x86_64-redhat-linux/4.8.5/include/syslimits.h \
+ /data2/libingchen/anaconda2/lib/gcc/x86_64-unknown-linux-gnu/4.8.5/include-fixed/limits.h \
+ /data2/libingchen/anaconda2/lib/gcc/x86_64-unknown-linux-gnu/4.8.5/include-fixed/syslimits.h \
  /usr/include/limits.h /usr/include/bits/posix1_lim.h \
  /usr/include/bits/local_lim.h /usr/include/linux/limits.h \
  /usr/include/bits/posix2_lim.h /usr/include/bits/xopen_lim.h \
@@ -38,7 +38,7 @@ src/setparamsession.o: src/setparamsession.cpp /usr/include/stdc-predef.h \
  /usr/local/apr/include/apr-1/apr_want.h /usr/include/string.h \
  /usr/include/xlocale.h /usr/local/apr/include/apr-1/apr_allocator.h \
  /usr/local/apr/include/apr-1/apr_thread_mutex.h \
- /usr/lib/gcc/x86_64-redhat-linux/4.8.5/include/stdarg.h \
+ /data2/libingchen/anaconda2/lib/gcc/x86_64-unknown-linux-gnu/4.8.5/include/stdarg.h \
  ../../platforms/umc/include/umcsession.h \
  ../../libs/mrcp-client/include/mrcp_application.h \
  ../../libs/mrcp-client/include/mrcp_client_types.h \
@@ -117,7 +117,7 @@ src/setparamsession.o: src/setparamsession.cpp /usr/include/stdc-predef.h \
 
 /usr/include/time.h:
 
-/usr/lib/gcc/x86_64-redhat-linux/4.8.5/include/stddef.h:
+/data2/libingchen/anaconda2/lib/gcc/x86_64-unknown-linux-gnu/4.8.5/include/stddef.h:
 
 /usr/include/endian.h:
 
@@ -159,7 +159,7 @@ src/setparamsession.o: src/setparamsession.cpp /usr/include/stdc-predef.h \
 
 /usr/include/asm-generic/sockios.h:
 
-/usr/lib/gcc/x86_64-redhat-linux/4.8.5/include/stdint.h:
+/data2/libingchen/anaconda2/lib/gcc/x86_64-unknown-linux-gnu/4.8.5/include/stdint.h:
 
 /usr/include/stdint.h:
 
@@ -187,9 +187,9 @@ src/setparamsession.o: src/setparamsession.cpp /usr/include/stdc-predef.h \
 
 /usr/include/bits/waitstatus.h:
 
-/usr/lib/gcc/x86_64-redhat-linux/4.8.5/include/limits.h:
+/data2/libingchen/anaconda2/lib/gcc/x86_64-unknown-linux-gnu/4.8.5/include-fixed/limits.h:
 
-/usr/lib/gcc/x86_64-redhat-linux/4.8.5/include/syslimits.h:
+/data2/libingchen/anaconda2/lib/gcc/x86_64-unknown-linux-gnu/4.8.5/include-fixed/syslimits.h:
 
 /usr/include/limits.h:
 
@@ -233,7 +233,7 @@ src/setparamsession.o: src/setparamsession.cpp /usr/include/stdc-predef.h \
 
 /usr/local/apr/include/apr-1/apr_thread_mutex.h:
 
-/usr/lib/gcc/x86_64-redhat-linux/4.8.5/include/stdarg.h:
+/data2/libingchen/anaconda2/lib/gcc/x86_64-unknown-linux-gnu/4.8.5/include/stdarg.h:
 
 ../../platforms/umc/include/umcsession.h:
 

@@ -10,13 +10,13 @@ APRUTIL_DOTTED_VERSION=1.5.4
 srcdir = .
 
 
-INCLUDES = -I/home/cotin/share/unimrcp-deps-1.5.0/libs/apr-util/include -I/home/cotin/share/unimrcp-deps-1.5.0/libs/apr-util/include/private  -I/home/cotin/share/unimrcp-deps-1.5.0/libs/apr/include  -I/home/cotin/share/unimrcp-deps-1.5.0/libs/apr-util/xml/expat/lib
+INCLUDES = -I/data2/libingchen/Code/MRCP-Plugin-Demo/unimrcp-deps-1.5.0/libs/apr-util/include -I/data2/libingchen/Code/MRCP-Plugin-Demo/unimrcp-deps-1.5.0/libs/apr-util/include/private  -I/data2/libingchen/Code/MRCP-Plugin-Demo/unimrcp-deps-1.5.0/libs/apr/include  
 APRUTIL_LDFLAGS = 
-APRUTIL_LIBS = /home/cotin/share/unimrcp-deps-1.5.0/libs/apr-util/xml/expat/libexpat.la /home/cotin/share/unimrcp-deps-1.5.0/libs/apr/libapr-1.la -lrt -lcrypt -lpthread -ldl
+APRUTIL_LIBS = -lexpat /data2/libingchen/Code/MRCP-Plugin-Demo/unimrcp-deps-1.5.0/libs/apr/libapr-1.la -lrt -lcrypt -lpthread -ldl
 
 TARGET_LIB = libaprutil-${APRUTIL_MAJOR_VERSION}.la
-INSTALL_SUBDIRS =  xml/expat
-EXTRA_SOURCE_DIRS =  xml/expat
+INSTALL_SUBDIRS =  
+EXTRA_SOURCE_DIRS =  
 APRUTIL_PCFILE = apr-util-$(APRUTIL_MAJOR_VERSION).pc
 APU_CONFIG = apu-$(APRUTIL_MAJOR_VERSION)-config
 INSTALL = /bin/install -c
@@ -47,10 +47,10 @@ LDADD_crypto_nss =
 TARGETS = $(TARGET_LIB) aprutil.exp apu-config.out $(APU_MODULES)
 
 # bring in rules.mk for standard functionality
-include /home/cotin/share/unimrcp-deps-1.5.0/libs/apr-util/build/rules.mk
-include /home/cotin/share/unimrcp-deps-1.5.0/libs/apr-util/build-outputs.mk
+include /data2/libingchen/Code/MRCP-Plugin-Demo/unimrcp-deps-1.5.0/libs/apr-util/build/rules.mk
+include /data2/libingchen/Code/MRCP-Plugin-Demo/unimrcp-deps-1.5.0/libs/apr-util/build-outputs.mk
 
-CLEAN_SUBDIRS = test  xml/expat
+CLEAN_SUBDIRS = test  
 
 CLEAN_TARGETS = exports.c export_vars.c aprutil.exp .make.dirs apu-config.out
 DISTCLEAN_TARGETS = config.cache config.log config.status libtool \
@@ -68,8 +68,8 @@ exec_prefix=${prefix}
 bindir=${exec_prefix}/bin
 libdir=${exec_prefix}/lib
 includedir=${prefix}/include/apr-${APRUTIL_MAJOR_VERSION}
-top_srcdir=/home/cotin/share/unimrcp-deps-1.5.0/libs/apr-util
-top_blddir=/home/cotin/share/unimrcp-deps-1.5.0/libs/apr-util
+top_srcdir=/data2/libingchen/Code/MRCP-Plugin-Demo/unimrcp-deps-1.5.0/libs/apr-util
+top_blddir=/data2/libingchen/Code/MRCP-Plugin-Demo/unimrcp-deps-1.5.0/libs/apr-util
 
 # Create apu-config script suitable for the install tree
 apu-config.out: $(APU_CONFIG)

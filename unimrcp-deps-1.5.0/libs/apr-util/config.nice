@@ -3,6 +3,6 @@
 # Created by configure
 
 "./configure" \
-"--with-apr=/home/cotin/share/unimrcp-deps-1.5.0/libs/apr" \
+"--with-apr=/data2/libingchen/Code/MRCP-Plugin-Demo/unimrcp-deps-1.5.0/libs/apr" \
 "--prefix=/usr/local/apr" \
 "$@"

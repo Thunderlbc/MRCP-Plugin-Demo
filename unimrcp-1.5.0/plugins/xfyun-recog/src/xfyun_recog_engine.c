@@ -547,6 +547,8 @@ static apt_bool_t xfyun_recog_stream_recog(xfyun_recog_channel_t *recog_channel,
 	if(NULL == recog_channel->session_id) {
 		return FALSE;
 	}
+
+  apt_log(RECOG_LOG_MARK,APT_PRIO_WARNING,"[xfyun] we got voice_data[%d]", voice_len);
 	ret = QISRAudioWrite(recog_channel->session_id, voice_data, voice_len, aud_stat, &ep_stat, &rec_stat);
 	if (MSP_SUCCESS != ret)
 	{
@@ -588,6 +590,7 @@ static apt_bool_t xfyun_recog_stream_recog(xfyun_recog_channel_t *recog_channel,
 /** Callback is called from MPF engine context to write/send new frame */
 static apt_bool_t xfyun_recog_stream_write(mpf_audio_stream_t *stream, const mpf_frame_t *frame)
 {
+  apt_log(RECOG_LOG_MARK,APT_PRIO_INFO,"[xfyun] Into STREAM WRITE with frame[type:%d, maker:%d]", frame->type, frame->marker);
 	xfyun_recog_channel_t *recog_channel = stream->obj;
 	if(recog_channel->stop_response) {
 		/* send asynchronous response to STOP request */
@@ -599,6 +602,9 @@ static apt_bool_t xfyun_recog_stream_write(mpf_audio_stream_t *stream, const mpf
 	if(frame->codec_frame.size) {
 		xfyun_recog_stream_recog(recog_channel, frame->codec_frame.buffer, frame->codec_frame.size);
 	}
+
+  apt_log(RECOG_LOG_MARK,APT_PRIO_INFO,"[xfyun] recog_request:%d",recog_channel->recog_request);
+
 	if(recog_channel->recog_request) {
 		mpf_detector_event_e det_event = mpf_activity_detector_process(recog_channel->detector,frame);
 		switch(det_event) {

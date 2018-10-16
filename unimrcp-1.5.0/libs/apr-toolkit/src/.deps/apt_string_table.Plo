@@ -9,7 +9,7 @@ src/apt_string_table.lo: src/apt_string_table.c \
  ../../libs/apr-toolkit/include/apt_string.h \
  ../../libs/apr-toolkit/include/apt.h /usr/local/apr/include/apr-1/apr.h \
  /usr/include/sys/types.h /usr/include/time.h \
- /usr/lib/gcc/x86_64-redhat-linux/4.8.5/include/stddef.h \
+ /data2/libingchen/anaconda2/lib/gcc/x86_64-unknown-linux-gnu/4.8.5/include/stddef.h \
  /usr/include/sys/select.h /usr/include/bits/select.h \
  /usr/include/bits/sigset.h /usr/include/bits/time.h \
  /usr/include/sys/sysmacros.h /usr/include/bits/pthreadtypes.h \
@@ -18,15 +18,15 @@ src/apt_string_table.lo: src/apt_string_table.c \
  /usr/include/bits/sockaddr.h /usr/include/asm/socket.h \
  /usr/include/asm-generic/socket.h /usr/include/asm/sockios.h \
  /usr/include/asm-generic/sockios.h \
- /usr/lib/gcc/x86_64-redhat-linux/4.8.5/include/stdint.h \
+ /data2/libingchen/anaconda2/lib/gcc/x86_64-unknown-linux-gnu/4.8.5/include/stdint.h \
  /usr/include/stdint.h /usr/include/bits/wchar.h /usr/include/sys/wait.h \
  /usr/include/signal.h /usr/include/bits/signum.h \
  /usr/include/bits/siginfo.h /usr/include/bits/sigaction.h \
  /usr/include/bits/sigcontext.h /usr/include/bits/sigstack.h \
  /usr/include/sys/ucontext.h /usr/include/bits/sigthread.h \
  /usr/include/bits/waitflags.h /usr/include/bits/waitstatus.h \
- /usr/lib/gcc/x86_64-redhat-linux/4.8.5/include/limits.h \
- /usr/lib/gcc/x86_64-redhat-linux/4.8.5/include/syslimits.h \
+ /data2/libingchen/anaconda2/lib/gcc/x86_64-unknown-linux-gnu/4.8.5/include-fixed/limits.h \
+ /data2/libingchen/anaconda2/lib/gcc/x86_64-unknown-linux-gnu/4.8.5/include-fixed/syslimits.h \
  /usr/include/limits.h /usr/include/bits/posix1_lim.h \
  /usr/include/bits/local_lim.h /usr/include/linux/limits.h \
  /usr/include/bits/posix2_lim.h /usr/include/bits/xopen_lim.h \
@@ -43,7 +43,7 @@ src/apt_string_table.lo: src/apt_string_table.c \
  /usr/include/stdlib.h /usr/local/apr/include/apr-1/apr_allocator.h \
  /usr/local/apr/include/apr-1/apr_thread_mutex.h \
  /usr/local/apr/include/apr-1/apr_strings.h \
- /usr/lib/gcc/x86_64-redhat-linux/4.8.5/include/stdarg.h
+ /data2/libingchen/anaconda2/lib/gcc/x86_64-unknown-linux-gnu/4.8.5/include/stdarg.h
 
 /usr/include/stdc-predef.h:
 
@@ -85,7 +85,7 @@ src/apt_string_table.lo: src/apt_string_table.c \
 
 /usr/include/time.h:
 
-/usr/lib/gcc/x86_64-redhat-linux/4.8.5/include/stddef.h:
+/data2/libingchen/anaconda2/lib/gcc/x86_64-unknown-linux-gnu/4.8.5/include/stddef.h:
 
 /usr/include/sys/select.h:
 
@@ -119,7 +119,7 @@ src/apt_string_table.lo: src/apt_string_table.c \
 
 /usr/include/asm-generic/sockios.h:
 
-/usr/lib/gcc/x86_64-redhat-linux/4.8.5/include/stdint.h:
+/data2/libingchen/anaconda2/lib/gcc/x86_64-unknown-linux-gnu/4.8.5/include/stdint.h:
 
 /usr/include/stdint.h:
 
@@ -147,9 +147,9 @@ src/apt_string_table.lo: src/apt_string_table.c \
 
 /usr/include/bits/waitstatus.h:
 
-/usr/lib/gcc/x86_64-redhat-linux/4.8.5/include/limits.h:
+/data2/libingchen/anaconda2/lib/gcc/x86_64-unknown-linux-gnu/4.8.5/include-fixed/limits.h:
 
-/usr/lib/gcc/x86_64-redhat-linux/4.8.5/include/syslimits.h:
+/data2/libingchen/anaconda2/lib/gcc/x86_64-unknown-linux-gnu/4.8.5/include-fixed/syslimits.h:
 
 /usr/include/limits.h:
 
@@ -203,4 +203,4 @@ src/apt_string_table.lo: src/apt_string_table.c \
 
 /usr/local/apr/include/apr-1/apr_strings.h:
 
-/usr/lib/gcc/x86_64-redhat-linux/4.8.5/include/stdarg.h:
+/data2/libingchen/anaconda2/lib/gcc/x86_64-unknown-linux-gnu/4.8.5/include/stdarg.h:

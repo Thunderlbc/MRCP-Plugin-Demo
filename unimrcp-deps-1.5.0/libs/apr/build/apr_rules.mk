@@ -24,9 +24,9 @@
 #
 # Configuration variables
 #
-apr_builddir=/home/cotin/share/unimrcp-deps-1.5.0/libs/apr
-apr_builders=/home/cotin/share/unimrcp-deps-1.5.0/libs/apr/build
-top_builddir=/home/cotin/share/unimrcp-deps-1.5.0/libs/apr
+apr_builddir=/data2/libingchen/Code/MRCP-Plugin-Demo/unimrcp-deps-1.5.0/libs/apr
+apr_builders=/data2/libingchen/Code/MRCP-Plugin-Demo/unimrcp-deps-1.5.0/libs/apr/build
+top_builddir=/data2/libingchen/Code/MRCP-Plugin-Demo/unimrcp-deps-1.5.0/libs/apr
 
 # Some layouts require knowing what version we are at.
 APR_MAJOR_VERSION=1

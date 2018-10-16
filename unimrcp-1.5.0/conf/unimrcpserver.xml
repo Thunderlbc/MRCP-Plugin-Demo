@@ -115,6 +115,9 @@
       <engine id="Demo-Recog-1" name="demorecog" enable="true"/>
       <engine id="Demo-Verifier-1" name="demoverifier" enable="true"/>
       <engine id="Recorder-1" name="mrcprecorder" enable="true"/>
+      <!--<engine id="XFyun-Recog-1" name="xfyunrecog" enable="true"/>
+      <engine id="Deepasr-Recog-1" name="deepasrrecog" enable="true"/>
+      -->
 
       <!--
         Engines may have additional named ("max-channel-count") and generic (name/value) parameters.

@@ -10,7 +10,7 @@ srcdir = .
 #   programs such as sockperf, that have to be invoked in a special sequence
 #   or with special parameters
 
-INCLUDES = -I/home/cotin/share/unimrcp-deps-1.5.0/libs/apr-util/include -I/home/cotin/share/unimrcp-deps-1.5.0/libs/apr-util/include/private  -I/home/cotin/share/unimrcp-deps-1.5.0/libs/apr/include  -I/home/cotin/share/unimrcp-deps-1.5.0/libs/apr-util/xml/expat/lib
+INCLUDES = -I/data2/libingchen/Code/MRCP-Plugin-Demo/unimrcp-deps-1.5.0/libs/apr-util/include -I/data2/libingchen/Code/MRCP-Plugin-Demo/unimrcp-deps-1.5.0/libs/apr-util/include/private  -I/data2/libingchen/Code/MRCP-Plugin-Demo/unimrcp-deps-1.5.0/libs/apr/include  
 
 STDTEST_PORTABLE = dbd testall
 
@@ -28,8 +28,8 @@ LOCAL_LIBS = ../libaprutil-${APRUTIL_MAJOR_VERSION}1.la
 CLEAN_TARGETS = manyfile.bin testfile.txt data/sqlite*.db
 
 # bring in rules.mk for standard functionality
-include /home/cotin/share/unimrcp-deps-1.5.0/libs/apr-util/build/rules.mk
-APRUTIL_LIBS = /home/cotin/share/unimrcp-deps-1.5.0/libs/apr-util/xml/expat/libexpat.la /home/cotin/share/unimrcp-deps-1.5.0/libs/apr/libapr-1.la -lrt -lcrypt -lpthread -ldl
+include /data2/libingchen/Code/MRCP-Plugin-Demo/unimrcp-deps-1.5.0/libs/apr-util/build/rules.mk
+APRUTIL_LIBS = -lexpat /data2/libingchen/Code/MRCP-Plugin-Demo/unimrcp-deps-1.5.0/libs/apr/libapr-1.la -lrt -lcrypt -lpthread -ldl
 APRUTIL_LDFLAGS = $(ALL_LDFLAGS) -no-install 
 
 # link programs using -no-install to get real executables not

@@ -48,7 +48,7 @@
 const void *ap_ugly_hack = NULL;
 
 /*
- * /home/cotin/share/unimrcp-deps-1.5.0/libs/apr-util/include/apr_base64.h
+ * /data2/libingchen/Code/MRCP-Plugin-Demo/unimrcp-deps-1.5.0/libs/apr-util/include/apr_base64.h
  */
 const void *ap_hack_apr_base64_encode_len = (const void *)apr_base64_encode_len;
 const void *ap_hack_apr_base64_encode = (const void *)apr_base64_encode;
@@ -58,7 +58,7 @@ const void *ap_hack_apr_base64_decode = (const void *)apr_base64_decode;
 const void *ap_hack_apr_base64_decode_binary = (const void *)apr_base64_decode_binary;
 
 /*
- * /home/cotin/share/unimrcp-deps-1.5.0/libs/apr-util/include/apr_buckets.h
+ * /data2/libingchen/Code/MRCP-Plugin-Demo/unimrcp-deps-1.5.0/libs/apr-util/include/apr_buckets.h
  */
 const void *ap_hack_apr_brigade_create = (const void *)apr_brigade_create;
 const void *ap_hack_apr_brigade_destroy = (const void *)apr_brigade_destroy;
@@ -121,7 +121,7 @@ const void *ap_hack_apr_bucket_file_make = (const void *)apr_bucket_file_make;
 const void *ap_hack_apr_bucket_file_enable_mmap = (const void *)apr_bucket_file_enable_mmap;
 
 /*
- * /home/cotin/share/unimrcp-deps-1.5.0/libs/apr-util/include/apr_crypto.h
+ * /data2/libingchen/Code/MRCP-Plugin-Demo/unimrcp-deps-1.5.0/libs/apr-util/include/apr_crypto.h
  */
 #if APU_HAVE_CRYPTO
 const void *ap_hack_apr_crypto_init = (const void *)apr_crypto_init;
@@ -145,14 +145,14 @@ const void *ap_hack_apr_crypto_shutdown = (const void *)apr_crypto_shutdown;
 #endif /* APU_HAVE_CRYPTO */
 
 /*
- * /home/cotin/share/unimrcp-deps-1.5.0/libs/apr-util/include/apr_date.h
+ * /data2/libingchen/Code/MRCP-Plugin-Demo/unimrcp-deps-1.5.0/libs/apr-util/include/apr_date.h
  */
 const void *ap_hack_apr_date_checkmask = (const void *)apr_date_checkmask;
 const void *ap_hack_apr_date_parse_http = (const void *)apr_date_parse_http;
 const void *ap_hack_apr_date_parse_rfc = (const void *)apr_date_parse_rfc;
 
 /*
- * /home/cotin/share/unimrcp-deps-1.5.0/libs/apr-util/include/apr_dbd.h
+ * /data2/libingchen/Code/MRCP-Plugin-Demo/unimrcp-deps-1.5.0/libs/apr-util/include/apr_dbd.h
  */
 const void *ap_hack_apr_dbd_init = (const void *)apr_dbd_init;
 const void *ap_hack_apr_dbd_get_driver = (const void *)apr_dbd_get_driver;
@@ -188,7 +188,7 @@ const void *ap_hack_apr_dbd_pvbselect = (const void *)apr_dbd_pvbselect;
 const void *ap_hack_apr_dbd_datum_get = (const void *)apr_dbd_datum_get;
 
 /*
- * /home/cotin/share/unimrcp-deps-1.5.0/libs/apr-util/include/apr_dbm.h
+ * /data2/libingchen/Code/MRCP-Plugin-Demo/unimrcp-deps-1.5.0/libs/apr-util/include/apr_dbm.h
  */
 const void *ap_hack_apr_dbm_open_ex = (const void *)apr_dbm_open_ex;
 const void *ap_hack_apr_dbm_open = (const void *)apr_dbm_open;
@@ -205,7 +205,7 @@ const void *ap_hack_apr_dbm_get_usednames_ex = (const void *)apr_dbm_get_usednam
 const void *ap_hack_apr_dbm_get_usednames = (const void *)apr_dbm_get_usednames;
 
 /*
- * /home/cotin/share/unimrcp-deps-1.5.0/libs/apr-util/include/apr_hooks.h
+ * /data2/libingchen/Code/MRCP-Plugin-Demo/unimrcp-deps-1.5.0/libs/apr-util/include/apr_hooks.h
  */
 const void *ap_hack_apr_hook_sort_register = (const void *)apr_hook_sort_register;
 const void *ap_hack_apr_hook_sort_all = (const void *)apr_hook_sort_all;
@@ -213,7 +213,7 @@ const void *ap_hack_apr_hook_debug_show = (const void *)apr_hook_debug_show;
 const void *ap_hack_apr_hook_deregister_all = (const void *)apr_hook_deregister_all;
 
 /*
- * /home/cotin/share/unimrcp-deps-1.5.0/libs/apr-util/include/apr_ldap_init.h
+ * /data2/libingchen/Code/MRCP-Plugin-Demo/unimrcp-deps-1.5.0/libs/apr-util/include/apr_ldap_init.h
  */
 #if APR_HAS_LDAP
 const void *ap_hack_apr_ldap_ssl_init = (const void *)apr_ldap_ssl_init;
@@ -223,7 +223,7 @@ const void *ap_hack_apr_ldap_info = (const void *)apr_ldap_info;
 #endif /* APR_HAS_LDAP */
 
 /*
- * /home/cotin/share/unimrcp-deps-1.5.0/libs/apr-util/include/apr_ldap_option.h
+ * /data2/libingchen/Code/MRCP-Plugin-Demo/unimrcp-deps-1.5.0/libs/apr-util/include/apr_ldap_option.h
  */
 #if APR_HAS_LDAP
 const void *ap_hack_apr_ldap_get_option = (const void *)apr_ldap_get_option;
@@ -231,7 +231,7 @@ const void *ap_hack_apr_ldap_set_option = (const void *)apr_ldap_set_option;
 #endif /* APR_HAS_LDAP */
 
 /*
- * /home/cotin/share/unimrcp-deps-1.5.0/libs/apr-util/include/apr_ldap_rebind.h
+ * /data2/libingchen/Code/MRCP-Plugin-Demo/unimrcp-deps-1.5.0/libs/apr-util/include/apr_ldap_rebind.h
  */
 #if APR_HAS_LDAP
 const void *ap_hack_apr_ldap_rebind_init = (const void *)apr_ldap_rebind_init;
@@ -240,7 +240,7 @@ const void *ap_hack_apr_ldap_rebind_remove = (const void *)apr_ldap_rebind_remov
 #endif /* APR_HAS_LDAP */
 
 /*
- * /home/cotin/share/unimrcp-deps-1.5.0/libs/apr-util/include/apr_ldap_url.h
+ * /data2/libingchen/Code/MRCP-Plugin-Demo/unimrcp-deps-1.5.0/libs/apr-util/include/apr_ldap_url.h
  */
 #if APR_HAS_LDAP
 const void *ap_hack_apr_ldap_is_ldap_url = (const void *)apr_ldap_is_ldap_url;
@@ -251,7 +251,7 @@ const void *ap_hack_apr_ldap_url_parse = (const void *)apr_ldap_url_parse;
 #endif /* APR_HAS_LDAP */
 
 /*
- * /home/cotin/share/unimrcp-deps-1.5.0/libs/apr-util/include/apr_md4.h
+ * /data2/libingchen/Code/MRCP-Plugin-Demo/unimrcp-deps-1.5.0/libs/apr-util/include/apr_md4.h
  */
 const void *ap_hack_apr_md4_init = (const void *)apr_md4_init;
 #if APR_HAS_XLATE
@@ -263,7 +263,7 @@ const void *ap_hack_apr_md4_final = (const void *)apr_md4_final;
 const void *ap_hack_apr_md4 = (const void *)apr_md4;
 
 /*
- * /home/cotin/share/unimrcp-deps-1.5.0/libs/apr-util/include/apr_md5.h
+ * /data2/libingchen/Code/MRCP-Plugin-Demo/unimrcp-deps-1.5.0/libs/apr-util/include/apr_md5.h
  */
 const void *ap_hack_apr_md5_init = (const void *)apr_md5_init;
 const void *ap_hack_apr_md5_set_xlate = (const void *)apr_md5_set_xlate;
@@ -275,7 +275,7 @@ const void *ap_hack_apr_bcrypt_encode = (const void *)apr_bcrypt_encode;
 const void *ap_hack_apr_password_validate = (const void *)apr_password_validate;
 
 /*
- * /home/cotin/share/unimrcp-deps-1.5.0/libs/apr-util/include/apr_memcache.h
+ * /data2/libingchen/Code/MRCP-Plugin-Demo/unimrcp-deps-1.5.0/libs/apr-util/include/apr_memcache.h
  */
 const void *ap_hack_apr_memcache_hash = (const void *)apr_memcache_hash;
 const void *ap_hack_apr_memcache_hash_crc32 = (const void *)apr_memcache_hash_crc32;
@@ -301,19 +301,19 @@ const void *ap_hack_apr_memcache_version = (const void *)apr_memcache_version;
 const void *ap_hack_apr_memcache_stats = (const void *)apr_memcache_stats;
 
 /*
- * /home/cotin/share/unimrcp-deps-1.5.0/libs/apr-util/include/apr_optional.h
+ * /data2/libingchen/Code/MRCP-Plugin-Demo/unimrcp-deps-1.5.0/libs/apr-util/include/apr_optional.h
  */
 const void *ap_hack_apr_dynamic_fn_register = (const void *)apr_dynamic_fn_register;
 const void *ap_hack_apr_dynamic_fn_retrieve = (const void *)apr_dynamic_fn_retrieve;
 
 /*
- * /home/cotin/share/unimrcp-deps-1.5.0/libs/apr-util/include/apr_optional_hooks.h
+ * /data2/libingchen/Code/MRCP-Plugin-Demo/unimrcp-deps-1.5.0/libs/apr-util/include/apr_optional_hooks.h
  */
 const void *ap_hack_apr_optional_hook_add = (const void *)apr_optional_hook_add;
 const void *ap_hack_apr_optional_hook_get = (const void *)apr_optional_hook_get;
 
 /*
- * /home/cotin/share/unimrcp-deps-1.5.0/libs/apr-util/include/apr_queue.h
+ * /data2/libingchen/Code/MRCP-Plugin-Demo/unimrcp-deps-1.5.0/libs/apr-util/include/apr_queue.h
  */
 #if APR_HAS_THREADS
 const void *ap_hack_apr_queue_create = (const void *)apr_queue_create;
@@ -329,7 +329,7 @@ const void *ap_hack_apr_queue_term = (const void *)apr_queue_term;
 #endif /* APR_HAS_THREADS */
 
 /*
- * /home/cotin/share/unimrcp-deps-1.5.0/libs/apr-util/include/apr_reslist.h
+ * /data2/libingchen/Code/MRCP-Plugin-Demo/unimrcp-deps-1.5.0/libs/apr-util/include/apr_reslist.h
  */
 const void *ap_hack_apr_reslist_create = (const void *)apr_reslist_create;
 const void *ap_hack_apr_reslist_destroy = (const void *)apr_reslist_destroy;
@@ -342,7 +342,7 @@ const void *ap_hack_apr_reslist_maintain = (const void *)apr_reslist_maintain;
 const void *ap_hack_apr_reslist_cleanup_order_set = (const void *)apr_reslist_cleanup_order_set;
 
 /*
- * /home/cotin/share/unimrcp-deps-1.5.0/libs/apr-util/include/apr_rmm.h
+ * /data2/libingchen/Code/MRCP-Plugin-Demo/unimrcp-deps-1.5.0/libs/apr-util/include/apr_rmm.h
  */
 const void *ap_hack_apr_rmm_init = (const void *)apr_rmm_init;
 const void *ap_hack_apr_rmm_destroy = (const void *)apr_rmm_destroy;
@@ -357,7 +357,7 @@ const void *ap_hack_apr_rmm_offset_get = (const void *)apr_rmm_offset_get;
 const void *ap_hack_apr_rmm_overhead_get = (const void *)apr_rmm_overhead_get;
 
 /*
- * /home/cotin/share/unimrcp-deps-1.5.0/libs/apr-util/include/apr_sdbm.h
+ * /data2/libingchen/Code/MRCP-Plugin-Demo/unimrcp-deps-1.5.0/libs/apr-util/include/apr_sdbm.h
  */
 const void *ap_hack_apr_sdbm_open = (const void *)apr_sdbm_open;
 const void *ap_hack_apr_sdbm_close = (const void *)apr_sdbm_close;
@@ -371,7 +371,7 @@ const void *ap_hack_apr_sdbm_nextkey = (const void *)apr_sdbm_nextkey;
 const void *ap_hack_apr_sdbm_rdonly = (const void *)apr_sdbm_rdonly;
 
 /*
- * /home/cotin/share/unimrcp-deps-1.5.0/libs/apr-util/include/apr_sha1.h
+ * /data2/libingchen/Code/MRCP-Plugin-Demo/unimrcp-deps-1.5.0/libs/apr-util/include/apr_sha1.h
  */
 const void *ap_hack_apr_sha1_base64 = (const void *)apr_sha1_base64;
 const void *ap_hack_apr_sha1_init = (const void *)apr_sha1_init;
@@ -380,7 +380,7 @@ const void *ap_hack_apr_sha1_update_binary = (const void *)apr_sha1_update_binar
 const void *ap_hack_apr_sha1_final = (const void *)apr_sha1_final;
 
 /*
- * /home/cotin/share/unimrcp-deps-1.5.0/libs/apr-util/include/apr_strmatch.h
+ * /data2/libingchen/Code/MRCP-Plugin-Demo/unimrcp-deps-1.5.0/libs/apr-util/include/apr_strmatch.h
  */
 #if defined(DOXYGEN)
 const void *ap_hack_apr_strmatch = (const void *)apr_strmatch;
@@ -389,7 +389,7 @@ const void *ap_hack_apr_strmatch = (const void *)apr_strmatch;
 const void *ap_hack_apr_strmatch_precompile = (const void *)apr_strmatch_precompile;
 
 /*
- * /home/cotin/share/unimrcp-deps-1.5.0/libs/apr-util/include/apr_thread_pool.h
+ * /data2/libingchen/Code/MRCP-Plugin-Demo/unimrcp-deps-1.5.0/libs/apr-util/include/apr_thread_pool.h
  */
 #if APR_HAS_THREADS
 const void *ap_hack_apr_thread_pool_create = (const void *)apr_thread_pool_create;
@@ -413,7 +413,7 @@ const void *ap_hack_apr_thread_pool_task_owner_get = (const void *)apr_thread_po
 #endif /* APR_HAS_THREADS */
 
 /*
- * /home/cotin/share/unimrcp-deps-1.5.0/libs/apr-util/include/apr_uri.h
+ * /data2/libingchen/Code/MRCP-Plugin-Demo/unimrcp-deps-1.5.0/libs/apr-util/include/apr_uri.h
  */
 const void *ap_hack_apr_uri_port_of_scheme = (const void *)apr_uri_port_of_scheme;
 const void *ap_hack_apr_uri_unparse = (const void *)apr_uri_unparse;
@@ -421,14 +421,14 @@ const void *ap_hack_apr_uri_parse = (const void *)apr_uri_parse;
 const void *ap_hack_apr_uri_parse_hostinfo = (const void *)apr_uri_parse_hostinfo;
 
 /*
- * /home/cotin/share/unimrcp-deps-1.5.0/libs/apr-util/include/apr_uuid.h
+ * /data2/libingchen/Code/MRCP-Plugin-Demo/unimrcp-deps-1.5.0/libs/apr-util/include/apr_uuid.h
  */
 const void *ap_hack_apr_uuid_get = (const void *)apr_uuid_get;
 const void *ap_hack_apr_uuid_format = (const void *)apr_uuid_format;
 const void *ap_hack_apr_uuid_parse = (const void *)apr_uuid_parse;
 
 /*
- * /home/cotin/share/unimrcp-deps-1.5.0/libs/apr-util/include/apr_xlate.h
+ * /data2/libingchen/Code/MRCP-Plugin-Demo/unimrcp-deps-1.5.0/libs/apr-util/include/apr_xlate.h
  */
 const void *ap_hack_apr_xlate_open = (const void *)apr_xlate_open;
 const void *ap_hack_apr_xlate_sb_get = (const void *)apr_xlate_sb_get;
@@ -440,7 +440,7 @@ const void *ap_hack_apr_xlate_conv_byte = (const void *)apr_xlate_conv_byte;
 const void *ap_hack_apr_xlate_close = (const void *)apr_xlate_close;
 
 /*
- * /home/cotin/share/unimrcp-deps-1.5.0/libs/apr-util/include/apr_xml.h
+ * /data2/libingchen/Code/MRCP-Plugin-Demo/unimrcp-deps-1.5.0/libs/apr-util/include/apr_xml.h
  */
 const void *ap_hack_apr_text_append = (const void *)apr_text_append;
 const void *ap_hack_apr_xml_parser_create = (const void *)apr_xml_parser_create;
@@ -458,7 +458,7 @@ const void *ap_hack_apr_xml_parser_convert_doc = (const void *)apr_xml_parser_co
 #endif
 
 /*
- * /home/cotin/share/unimrcp-deps-1.5.0/libs/apr-util/include/apu_version.h
+ * /data2/libingchen/Code/MRCP-Plugin-Demo/unimrcp-deps-1.5.0/libs/apr-util/include/apu_version.h
  */
 #ifndef APU_VERSION_ONLY
 const void *ap_hack_apu_version = (const void *)apu_version;
@@ -466,13 +466,13 @@ const void *ap_hack_apu_version_string = (const void *)apu_version_string;
 #endif /* ndef APU_VERSION_ONLY */
 
 /*
- * /home/cotin/share/unimrcp-deps-1.5.0/libs/apr-util/include/private/apr_dbd_internal.h
+ * /data2/libingchen/Code/MRCP-Plugin-Demo/unimrcp-deps-1.5.0/libs/apr-util/include/private/apr_dbd_internal.h
  */
 const void *ap_hack_apr_dbd_mutex_lock = (const void *)apr_dbd_mutex_lock;
 const void *ap_hack_apr_dbd_mutex_unlock = (const void *)apr_dbd_mutex_unlock;
 
 /*
- * /home/cotin/share/unimrcp-deps-1.5.0/libs/apr-util/include/private/apr_dbm_private.h
+ * /data2/libingchen/Code/MRCP-Plugin-Demo/unimrcp-deps-1.5.0/libs/apr-util/include/private/apr_dbm_private.h
  */
 const void *ap_hack_apr_posix_perms2mode = (const void *)apr_posix_perms2mode;
 

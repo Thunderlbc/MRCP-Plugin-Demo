@@ -27,16 +27,16 @@ bindir="${exec_prefix}/bin"
 libdir="${exec_prefix}/lib"
 includedir="${prefix}/include/apr-${APRUTIL_MAJOR_VERSION}"
 
-LIBS="/home/cotin/share/unimrcp-deps-1.5.0/libs/apr-util/xml/expat/libexpat.la"
-INCLUDES="-I/home/cotin/share/unimrcp-deps-1.5.0/libs/apr-util/xml/expat/lib"
+LIBS="-lexpat"
+INCLUDES=""
 LDFLAGS=""
 LDAP_LIBS=""
 DBM_LIBS="  "
 
 APRUTIL_LIBNAME="aprutil-${APRUTIL_MAJOR_VERSION}"
 
-APU_SOURCE_DIR="/home/cotin/share/unimrcp-deps-1.5.0/libs/apr-util"
-APU_BUILD_DIR="/home/cotin/share/unimrcp-deps-1.5.0/libs/apr-util"
+APU_SOURCE_DIR="/data2/libingchen/Code/MRCP-Plugin-Demo/unimrcp-deps-1.5.0/libs/apr-util"
+APU_BUILD_DIR="/data2/libingchen/Code/MRCP-Plugin-Demo/unimrcp-deps-1.5.0/libs/apr-util"
 APR_XML_EXPAT_OLD="@APR_XML_EXPAT_OLD@"
 APU_DB_VERSION="0"
 

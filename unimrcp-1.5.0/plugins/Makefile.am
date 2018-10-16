@@ -2,6 +2,10 @@ MAINTAINERCLEANFILES   = Makefile.in
 
 SUBDIRS                =
 
+if DEEPASRRECOG_PLUGIN
+SUBDIRS               += deepasr-recog
+endif
+
 if DEMOSYNTH_PLUGIN
 SUBDIRS               += demo-synth
 endif

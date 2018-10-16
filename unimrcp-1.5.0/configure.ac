@@ -187,6 +187,11 @@ UNI_PLUGIN_ENABLED(xfyunrecog)
 
 AM_CONDITIONAL([XFYUNRECOG_PLUGIN],[test "${enable_xfyunrecog_plugin}" = "yes"])
 
+dnl Deepasr recognizer plugin.
+UNI_PLUGIN_ENABLED(deepasrrecog)
+
+AM_CONDITIONAL([DEEPASRRECOG_PLUGIN],[test "${enable_deepasrrecog_plugin}" = "yes"])
+
 dnl Demo verifier plugin.
 UNI_PLUGIN_ENABLED(demoverifier)
 
@@ -228,6 +233,7 @@ AC_CONFIG_FILES([
     plugins/xfyun-synth/Makefile
     plugins/demo-recog/Makefile
     plugins/xfyun-recog/Makefile
+    plugins/deepasr-recog/Makefile
     plugins/demo-verifier/Makefile
     platforms/Makefile
     platforms/libunimrcp-server/Makefile
@@ -281,6 +287,7 @@ echo Demo synthesizer plugin....... : $enable_demosynth_plugin
 echo XFyun synthesizer plugin...... : $enable_xfyunsynth_plugin
 echo Demo recognizer plugin........ : $enable_demorecog_plugin
 echo XFyun recognizer plugin....... : $enable_xfyunrecog_plugin
+echo Deepasr recognizer plugin....... : $enable_deepasrrecog_plugin
 echo Demo verifier plugin.......... : $enable_demoverifier_plugin
 echo Recorder plugin............... : $enable_recorder_plugin
 echo

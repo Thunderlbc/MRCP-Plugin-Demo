@@ -8,6 +8,6 @@
 #   $ . path/to/apr-util/export_vars.sh
 #
 
-APRUTIL_EXPORT_INCLUDES="-I/home/cotin/share/unimrcp-deps-1.5.0/libs/apr-util/xml/expat/lib"
-APRUTIL_EXPORT_LIBS="/home/cotin/share/unimrcp-deps-1.5.0/libs/apr-util/xml/expat/libexpat.la"
+APRUTIL_EXPORT_INCLUDES=""
+APRUTIL_EXPORT_LIBS="-lexpat"
 APRUTIL_LDFLAGS=""

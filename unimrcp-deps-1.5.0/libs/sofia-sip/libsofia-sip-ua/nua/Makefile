@@ -95,8 +95,8 @@ host_triplet = x86_64-unknown-linux-gnu
 target_triplet = x86_64-unknown-linux-gnu
 check_PROGRAMS = $(am__EXEEXT_1)
 TESTS = $(am__EXEEXT_1)
-#am__append_1 = check_nua
-#am__append_2 = check_nua
+am__append_1 = check_nua
+am__append_2 = check_nua
 DIST_COMMON = $(nobase_include_sofia_HEADERS) $(srcdir)/Doxyfile.in \
 	$(srcdir)/Makefile.am $(srcdir)/Makefile.in \
 	$(top_srcdir)/rules/lcov.am $(top_srcdir)/rules/silent.am \
@@ -132,7 +132,7 @@ am_libnua_la_OBJECTS = nua.lo nua_common.lo nua_stack.lo nua_server.lo \
 	nua_options.lo nua_message.lo nua_publish.lo nua_subnotref.lo \
 	nua_notifier.lo nua_event_server.lo nua_tag.lo nua_tag_ref.lo
 libnua_la_OBJECTS = $(am_libnua_la_OBJECTS)
-#am__EXEEXT_1 = check_nua$(EXEEXT)
+am__EXEEXT_1 = check_nua$(EXEEXT)
 am_check_nua_OBJECTS = check_nua.$(OBJEXT) check_session.$(OBJEXT) \
 	check_register.$(OBJEXT) check_etsi.$(OBJEXT) \
 	check_simple.$(OBJEXT)
@@ -182,20 +182,20 @@ CTAGS = ctags
 am__tty_colors = \
 red=; grn=; lgn=; blu=; std=
 DISTFILES = $(DIST_COMMON) $(DIST_SOURCES) $(TEXINFOS) $(EXTRA_DIST)
-ACLOCAL = ${SHELL} /home/cotin/share/unimrcp-deps-1.5.0/libs/sofia-sip/missing --run aclocal-1.11
+ACLOCAL = ${SHELL} /data2/libingchen/Code/MRCP-Plugin-Demo/unimrcp-deps-1.5.0/libs/sofia-sip/missing --run aclocal-1.11
 ACLOCAL_AMFLAGS = -I m4
 ALLOCA = 
-AMTAR = ${SHELL} /home/cotin/share/unimrcp-deps-1.5.0/libs/sofia-sip/missing --run tar
+AMTAR = ${SHELL} /data2/libingchen/Code/MRCP-Plugin-Demo/unimrcp-deps-1.5.0/libs/sofia-sip/missing --run tar
 AR = ar
-AUTOCONF = ${SHELL} /home/cotin/share/unimrcp-deps-1.5.0/libs/sofia-sip/missing --run autoconf
-AUTOHEADER = ${SHELL} /home/cotin/share/unimrcp-deps-1.5.0/libs/sofia-sip/missing --run autoheader
-AUTOMAKE = ${SHELL} /home/cotin/share/unimrcp-deps-1.5.0/libs/sofia-sip/missing --run automake-1.11
+AUTOCONF = ${SHELL} /data2/libingchen/Code/MRCP-Plugin-Demo/unimrcp-deps-1.5.0/libs/sofia-sip/missing --run autoconf
+AUTOHEADER = ${SHELL} /data2/libingchen/Code/MRCP-Plugin-Demo/unimrcp-deps-1.5.0/libs/sofia-sip/missing --run autoheader
+AUTOMAKE = ${SHELL} /data2/libingchen/Code/MRCP-Plugin-Demo/unimrcp-deps-1.5.0/libs/sofia-sip/missing --run automake-1.11
 AWK = gawk
 CC = gcc
 CCDEPMODE = depmode=gcc3
 CFLAGS = -g -O2
-CHECK_CFLAGS = 
-CHECK_LIBS = 
+CHECK_CFLAGS = -pthread  
+CHECK_LIBS = -lcheck  
 COVERAGE_FLAGS = 
 CPP = gcc -E
 CPPFLAGS = 
@@ -210,7 +210,7 @@ ECHO_C =
 ECHO_N = -n
 ECHO_T = 
 EGREP = /bin/grep -E
-ETAGS = echo
+ETAGS = etags
 EXEEXT = 
 FGREP = /bin/grep -F
 GCOV = 
@@ -240,10 +240,10 @@ LIBVER_SOFIA_SIP_UA_GLIB_SOVER = 3
 LIBVER_SOFIA_SIP_UA_REV = 0
 LIBVER_SOFIA_SIP_UA_SOVER = 0
 LIPO = 
-LN_S = cp -p
+LN_S = ln -s
 LTLIBOBJS = 
 MAINT = #
-MAKEINFO = ${SHELL} /home/cotin/share/unimrcp-deps-1.5.0/libs/sofia-sip/missing --run makeinfo
+MAKEINFO = ${SHELL} /data2/libingchen/Code/MRCP-Plugin-Demo/unimrcp-deps-1.5.0/libs/sofia-sip/missing --run makeinfo
 MINGW_ENVIRONMENT = 
 MKDIR_P = /bin/mkdir -p
 MOSTLYCLEANFILES = *.bb *.bbg *.da *.gcov *.gcda *.gcno
@@ -274,10 +274,10 @@ STRIP = strip
 TESTS_ENVIRONMENT = 
 VERSION = 1.12.11-234-gd74df2e
 VER_LIBSOFIA_SIP_UA_MAJOR_MINOR = 1.12
-abs_builddir = /home/cotin/share/unimrcp-deps-1.5.0/libs/sofia-sip/libsofia-sip-ua/nua
-abs_srcdir = /home/cotin/share/unimrcp-deps-1.5.0/libs/sofia-sip/libsofia-sip-ua/nua
-abs_top_builddir = /home/cotin/share/unimrcp-deps-1.5.0/libs/sofia-sip
-abs_top_srcdir = /home/cotin/share/unimrcp-deps-1.5.0/libs/sofia-sip
+abs_builddir = /data2/libingchen/Code/MRCP-Plugin-Demo/unimrcp-deps-1.5.0/libs/sofia-sip/libsofia-sip-ua/nua
+abs_srcdir = /data2/libingchen/Code/MRCP-Plugin-Demo/unimrcp-deps-1.5.0/libs/sofia-sip/libsofia-sip-ua/nua
+abs_top_builddir = /data2/libingchen/Code/MRCP-Plugin-Demo/unimrcp-deps-1.5.0/libs/sofia-sip
+abs_top_srcdir = /data2/libingchen/Code/MRCP-Plugin-Demo/unimrcp-deps-1.5.0/libs/sofia-sip
 ac_ct_CC = gcc
 ac_ct_DUMPBIN = 
 am__include = include
@@ -306,7 +306,7 @@ htmldir = ${docdir}
 include_sofiadir = ${includedir}/sofia-sip-1.12
 includedir = ${prefix}/include
 infodir = ${datarootdir}/info
-install_sh = ${SHELL} /home/cotin/share/unimrcp-deps-1.5.0/libs/sofia-sip/install-sh
+install_sh = ${SHELL} /data2/libingchen/Code/MRCP-Plugin-Demo/unimrcp-deps-1.5.0/libs/sofia-sip/install-sh
 libdir = ${exec_prefix}/lib
 libexecdir = ${exec_prefix}/libexec
 localedir = ${datarootdir}/locale
@@ -369,7 +369,7 @@ check_nua_SOURCES = check_nua.c check_nua.h \
 			check_etsi.c check_simple.c
 
 check_nua_LDADD = $(LDADD) ${top_builddir}/s2check/libs2.a \
-			
+			-lcheck  
 
 
 # ----------------------------------------------------------------------

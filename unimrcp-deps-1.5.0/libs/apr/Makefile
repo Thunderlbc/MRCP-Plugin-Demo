@@ -1,8 +1,8 @@
 
 srcdir=.
 
-top_srcdir=/home/cotin/share/unimrcp-deps-1.5.0/libs/apr
-top_blddir=/home/cotin/share/unimrcp-deps-1.5.0/libs/apr
+top_srcdir=/data2/libingchen/Code/MRCP-Plugin-Demo/unimrcp-deps-1.5.0/libs/apr
+top_blddir=/data2/libingchen/Code/MRCP-Plugin-Demo/unimrcp-deps-1.5.0/libs/apr
 
 #
 # APR (Apache Portable Runtime) library Makefile.
@@ -41,8 +41,8 @@ TARGETS = $(TARGET_LIB) apr.exp apr-config.out build/apr_rules.out
 LT_VERSION = -version-info 5:2:5
 
 # bring in rules.mk for standard functionality
-include /home/cotin/share/unimrcp-deps-1.5.0/libs/apr/build/apr_rules.mk
-include /home/cotin/share/unimrcp-deps-1.5.0/libs/apr/build-outputs.mk
+include /data2/libingchen/Code/MRCP-Plugin-Demo/unimrcp-deps-1.5.0/libs/apr/build/apr_rules.mk
+include /data2/libingchen/Code/MRCP-Plugin-Demo/unimrcp-deps-1.5.0/libs/apr/build-outputs.mk
 
 CLEAN_TARGETS = apr-config.out apr.exp exports.c export_vars.c .make.dirs \
 	build/apr_rules.out tools/gen_test_char \
